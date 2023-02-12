@@ -11,7 +11,7 @@ public class Students {
     private String firstName;
     @Column(nullable = false)
     private String lastName;
-    @Column(nullable = false, unique = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
     public Students(Long id, String firstName, String lastName, String email){
